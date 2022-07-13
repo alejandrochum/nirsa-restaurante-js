@@ -1,0 +1,59 @@
+.logoadmin{
+	width: 10%;
+	height: auto;
+	left: 45%;
+	position: absolute;
+	top: 100px;
+	 display:block;
+
+}
+
+
+
+
+@media (max-width: 1280px) {
+	
+	.logoadmin{
+	width: 20%;
+	height: auto;
+	left: 40%;
+	position: absolute;
+	top: 100px;
+	 display:block;
+
+}
+
+	
+}
+
+
+@media (max-width: 1024px) {
+	
+	.logoadmin{
+	width: 20%;
+	height: auto;
+	left: 40%;
+	position: absolute;
+	top: 100px;
+	 display:block;
+
+}
+
+	
+}
+
+
+@media (max-width: 720px) {
+	
+	.logoadmin{
+	width: 30%;
+	height: auto;
+	left: 35%;
+	position: absolute;
+	top: 100px;
+	 display:block;
+
+}
+
+	
+}

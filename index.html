@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description"
+        content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>NIRSA</title>
+    <!-- Favicon -->
+    <link rel="icon" href="app-assets/images/logo/favicon.png">
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/tether-theme-arrows.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/tether.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/shepherd-theme-default.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-analytics.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/card-analytics.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/tour/tour.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static  " data-open="click"
+    data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="navbar-collapse" id="navbar-mobile">
+                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item mobile-menu d-xl-none mr-auto"><a
+                                    class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                                        class="ficon feather icon-menu"></i></a></li>
+                        </ul>
+
+
+                    </div>
+                    <ul class="nav navbar-nav float-right">
+
+                        <li class="dropdown dropdown-user nav-item"><a
+                                class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">Kevin
+                                        Briones</span><span class="user-status">Activo</span></div><span><img
+                                        class="round" src="app-assets/images/portrait/small/avatar-s-11.jpg"
+                                        alt="avatar" height="40" width="40"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" id="signOut"><i class="feather icon-power"></i>
+                                    Cerrar Sesión</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="html/ltr/vertical-menu-template/index.html">
+                        <div class="brand-logo"><img alt="" src="app-assets/images/logo/logo.png" width="100%"
+                                height="auto"></div>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i
+                            class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i
+                            class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary"
+                            data-ticon="icon-disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+
+
+                <li class="active"><a href="index.html"><i class="feather icon-home"></i><span class="menu-title"
+                            data-i18n="Inicio">Inicio</span></a>
+                </li>
+                <li class=" nav-item"><a href="pedidos.html"><i class="feather icon-shopping-cart"></i><span
+                            class="menu-title" data-i18n="Chat">Pedidos</span></a>
+                </li>
+                <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-list"></i><span class="menu-title"
+                            data-i18n="Chat">Historial</span></a>
+                </li>
+                <li class=" nav-item"><a href="codigoqr.html"><i class="feather icon-grid"></i><span class="menu-title"
+                            data-i18n="Chat">Código QR</span></a> </li>
+                <li class="nav-item"><a href="comunicados.html"><i class="feather icon-layout"></i><span
+                            class="menu-title" data-i18n="Chat">Deli noticias</span></a>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <!-- Dashboard Analytics Start -->
+                <section id="dashboard-analytics">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="card bg-analytics text-white">
+                                <div class="card-content">
+                                    <div class="card-body text-center">
+                                        <img src="app-assets/images/elements/decore-left.png" class="img-left" alt="
+            card-img-left">
+                                        <img src="app-assets/images/elements/decore-right.png" class="img-right" alt="
+            card-img-right">
+                                        <div class="avatar avatar-xl bg-primary shadow mt-0">
+                                            <div class="avatar-content">
+                                                <i class="feather icon-user white font-large-1"></i>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <h1 class="mb-2 text-white">Hola Kevin</h1>
+                                            <p class="m-auto w-75">Empresa: NIRSA</p><br>
+                                            <p class="m-auto w-75">Estamos muy contentos de que seas parte de esta
+                                                comunidad, Aquí encontrarás un resumen de tu cuenta</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex flex-column align-items-start pb-0">
+                                    <div class="avatar bg-rgba-primary1 p-50 m-0">
+                                        <div class="avatar-content">
+                                            <i class="feather icon-users text-primary font-medium-5"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Tu pedido de hoy</p>
+                                    <h2 id="todayMeal" class="text-bold-700 mt-1 mb-25">Dieta</h2>
+                                    <p class="mb-0">Recuerda que puedes cancelar tu pedido de hoy hasta las 10:00 am.
+                                    </p>
+                                </div>
+
+                                <div class="card-content">
+                                    <div class="col-12">
+
+
+                                        <button type="button" class="btn btn-primary1 mr-1" data-toggle="modal"
+                                            data-target="#exampleModalCenter-cancelar">
+                                            Cancelar
+                                        </button>
+
+
+
+                                        <!-- Modal cancelar -->
+                                        <div class="modal fade" id="exampleModalCenter-cancelar" tabindex="-1"
+                                            role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable"
+                                                role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Cancelar
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>
+
+                                                            ¿Estás seguro de que deseas cancelar?
+
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="#">
+                                                            <div class="btn btn-primary">Sí, cancelar.</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex flex-column align-items-start pb-0">
+                                    <div class="avatar bg-rgba-warning p-50 m-0">
+                                        <div class="avatar-content">
+                                            <img src="app-assets/images/icons/qr.png" width="50px">
+                                        </div>
+                                    </div>
+                                    <p class="mb-0"><br></p>
+                                    <h2 class="text-bold-700 mt-1 mb-25">Código QR</h2>
+                                    <p class="mb-0">Obtén acceso para consultar tu código QR</p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="col-12">
+
+
+                                        <button type="button" class="btn btn-primary2 mr-1" data-toggle="modal"
+                                            data-target="#qr">
+                                            Ver código QR
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="qr" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable"
+                                                role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Kevin aquí
+                                                            esta tu código QR</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>
+
+
+                                                            Presenta este código en el comedor para solicitar tu
+                                                            almuerzo:<br>
+                                                            Abre el navegador de tu teléfono e ingresa a
+                                                            <b>delinirsa.com</b> para acceder a la plataforma y
+                                                            descargar el código QR.<br><br>
+                                                            <img src="app-assets/images/qr.png" alt="png"
+                                                                width="100%"><br><br>
+                                                            Tambien puedes realizar una captura de pantalla para guardar
+                                                            el código QR en la galería de imágenes de tu celular.
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex flex-column align-items-start pb-0">
+                                    <div class="avatar bg-rgba-primary p-50 m-0">
+                                        <div class="avatar-content">
+                                            <img src="app-assets/images/icons/calendario.png" width="50px">
+                                        </div>
+                                    </div>
+                                    <h2 id="requestedMeals" class="text-bold-700 mt-1 mb-25">20</h2>
+                                    <p class="mb-0">Almuerzos solicitados en este periodo</p>
+                                    <p class="mb-0">Se considera un periodo desde el 21 de cada mes al 20 del mes
+                                        siguiente</p>
+                                </div>
+                                <div class="card-content">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex flex-column align-items-start pb-0">
+                                    <div class="avatar bg-rgba-warning p-50 m-0">
+                                        <div class="avatar-content">
+                                            <img src="app-assets/images/icons/almuerzo.png" width="60px">
+                                        </div>
+                                    </div>
+                                    <h2 id="usedMeals" class="text-bold-700 mt-1 mb-25">16</h2>
+                                    <p class="mb-0">Almuerzos consumidos</p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="col-12">
+
+                                        <button type="button" class="btn btn-primary mr-1" data-toggle="modal"
+                                            data-target="#exampleModalCenter-cancelar">
+                                            Cancelar
+                                        </button>
+
+
+
+                                        <!-- Modal cancelar -->
+                                        <div class="modal fade" id="exampleModalCenter-cancelar" tabindex="-1"
+                                            role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable"
+                                                role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Cancelar
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>
+
+                                                            Estas seguro de que deseas cancelar.
+
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="#">
+                                                            <div class="btn btn-primary">Sí, cancelar.</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex flex-column align-items-start pb-0">
+                                    <div class="avatar bg-rgba-warning p-50 m-0">
+                                        <div class="avatar-content">
+                                            <img src="app-assets/images/icons/almuerzoo.png" width="60px">
+                                        </div>
+                                    </div>
+                                    <h2 id ="notUsedMeals" class="text-bold-700 mt-1 mb-25">4</h2>
+                                    <p class="mb-0">Almuerzos por consumir</p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="col-12">
+
+                                        <button type="button" class="btn btn-primary mr-1" data-toggle="modal"
+                                            data-target="#exampleModalCenter-cancelar">
+                                            Cancelar
+                                        </button>
+
+
+
+                                        <!-- Modal cancelar -->
+                                        <div class="modal fade" id="exampleModalCenter-cancelar" tabindex="-1"
+                                            role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-centered modal-dialog-scrollable"
+                                                role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Cancelar
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>
+
+                                                            Estas seguro de que deseas cancelar.
+
+                                                        </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="#">
+                                                            <div class="btn btn-primary">Sí, cancelar.</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex flex-column align-items-start pb-0">
+                                    <div class="avatar bg-rgba-warning p-50 m-0">
+                                        <div class="avatar-content">
+                                            <img src="app-assets/images/icons/menu.png" width="60px">
+                                        </div>
+                                    </div>
+                                    <h2 class="text-bold-700 mt-1 mb-25">Menú del día</h2>
+                                    <p class="mb-0">
+                                        Dieta: Ensalada cesar<br>
+                                        Regular: <br>
+                                        Op1: Sopa de pollo y seco<br>
+                                        Op2: Sancocho y menestra con carne
+                                    </p>
+                                </div>
+                                <div class="card-content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </section>
+                <!-- Dashboard Analytics end -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-right d-none d-md-block">BY NIVEK
+                STUDIO</span>
+            <button class="btn btn-primary btn-icon scroll-top" type="button"><i
+                    class="feather icon-arrow-up"></i></button>
+        </p>
+    </footer>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- <script src="app-assets/vendors/js/charts/apexcharts.min.js"></script> -->
+    <script src="app-assets/vendors/js/extensions/tether.min.js"></script>
+    <script src="app-assets/vendors/js/extensions/shepherd.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="app-assets/js/core/app-menu.js"></script>
+    <script src="app-assets/js/core/app.js"></script>
+    <script src="app-assets/js/scripts/components.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <!-- <script src="app-assets/js/scripts/pages/dashboard-analytics.js"></script> -->
+    <!-- END: Page JS-->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- <script type="module" src="firebaseConfig.js"></script> -->
+    <script type="module" src="js/authcheck.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+<!-- END: Body-->
+
+</html>
